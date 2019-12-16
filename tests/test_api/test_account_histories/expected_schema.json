@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "serverName": {
+      "type": "string"
+    },
+    "accountHistory": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "actionCd": {
+              "type": "string"
+            },
+            "after": {
+              "type": "string"
+            },
+            "before": {
+              "type": "string"
+            },
+            "countryCd": {
+              "type": "string"
+            },
+            "detail": {
+              "type": "string"
+            },
+            "moduleName": {
+              "type": "string"
+            },
+            "processCd": {
+              "type": "string"
+            },
+            "processDate": {
+              "type": "string"
+            },
+            "processTypeCd": {
+              "type": "string"
+            },
+            "reasonCd": {
+              "type": "string"
+            },
+            "strDtl": {
+              "type": "string"
+            },
+            "tranSrcCd": {
+              "type": "string"
+            },
+            "transactionDate": {
+              "type": "string"
+            },
+            "userId": {
+              "type": "string"
+            },
+            "aboNum": {
+              "type": "integer"
+            },
+            "salesPlanaff": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "actionCd",
+            "after",
+            "before",
+            "countryCd",
+            "detail",
+            "moduleName",
+            "processCd",
+            "processDate",
+            "processTypeCd",
+            "reasonCd",
+            "strDtl",
+            "tranSrcCd",
+            "transactionDate",
+            "userId",
+            "aboNum",
+            "salesPlanaff"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "type",
+    "serverName",
+    "accountHistory"
+  ]
+}
